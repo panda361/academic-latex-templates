@@ -1,0 +1,40 @@
+# LaTeX auxiliary and intermediate files
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.idx
+*.ilg
+*.ind
+*.lof
+*.log
+*.lot
+*.nav
+*.out
+*.snm
+*.synctex.gz
+*.synctex(busy)
+*.toc
+*.fdb_latexmk
+*.fls
+*.run.xml
+*.vrb
+*.xdv
+
+# Generated PDFs
+*.pdf
+
+# Editor and OS files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*.tmp
+
+# Build / output directories
+build/
+output/
+out/
+_aux/
+_build/
+
