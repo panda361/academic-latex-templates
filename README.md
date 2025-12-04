@@ -42,6 +42,7 @@ We split the original template into the following extensible structure to simpli
 
 ### 当前支持会议 Currently Supported
 
+- IJCAI-ECAI 2026 `templates/ijcai26/`  
 - IJCAI 2025 `templates/ijcai25/`  
 
 ## 使用方式 Usage
