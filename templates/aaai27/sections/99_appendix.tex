@@ -1,0 +1,121 @@
+\section{Reference Examples}
+\label{sec:reference_examples}
+
+Formatted bibliographies should look like the following examples. You should use BibTeX to generate the references. Missing fields are unacceptable when compiling references, and usually indicate that you are using the wrong type of entry (BibTeX class).
+
+\paragraph{Book with multiple authors} Use the \texttt{@book} class.\\[.2em]
+\nocite{em:86}
+%%BIBENTRY-BEGIN:em:86|.%%
+Engelmore, R.; and Morgan, A., eds. 1986.
+\newblock \emph{Blackboard Systems}.
+\newblock Reading, Mass.: Addison-Wesley.
+%%BIBENTRY-END:em:86%%
+
+\paragraph{Journal and magazine articles} Use the \texttt{@article} class.\\[.2em]
+\nocite{r:80}
+%%BIBENTRY-BEGIN:r:80|.\\[.2em]%%
+Robinson, A.~L. 1980.
+\newblock New Ways to Make Microcircuits Smaller.
+\newblock \emph{Science}, 208(4447): 1019--1022.\\[.2em]
+%%BIBENTRY-END:r:80%%
+\nocite{hcr:83}
+%%BIBENTRY-BEGIN:hcr:83|.%%
+Hasling, D.~W.; Clancey, W.~J.; and Rennels, G. 1984.
+\newblock Strategic explanations for a diagnostic consultation system.
+\newblock \emph{International Journal of Man-Machine Studies}, 20(1): 3--19.
+%%BIBENTRY-END:hcr:83%%
+
+\paragraph{Proceedings paper published by a society, press or publisher} Use the \texttt{@inproceedings} class. You may abbreviate the \emph{booktitle} field, but make sure that the conference edition is clear.\\[.2em]
+\nocite{c:84}
+%%BIBENTRY-BEGIN:c:84|.\\[.2em]%%
+Clancey, W.~J. 1984.
+\newblock {Classification Problem Solving}.
+\newblock In \emph{Proceedings of the Fourth National Conference on Artificial
+  Intelligence}, 45--54. Menlo Park, Calif.: AAAI Press.\\[.2em]
+%%BIBENTRY-END:c:84%%
+\nocite{c:83}
+%%BIBENTRY-BEGIN:c:83|.%%
+Clancey, W.~J. 1983.
+\newblock {Communication, Simulation, and Intelligent Agents: Implications of
+  Personal Intelligent Machines for Medical Education}.
+\newblock In \emph{Proceedings of the Eighth International Joint Conference on
+  Artificial Intelligence {(IJCAI-83)}}, 556--560. Menlo Park, Calif: {IJCAI
+  Organization}.
+%%BIBENTRY-END:c:83%%
+
+\paragraph{University technical report} Use the \texttt{@techreport} class.\\[.2em]
+\nocite{r:86}
+%%BIBENTRY-BEGIN:r:86|.%%
+Rice, J. 1986.
+\newblock {Poligon: A System for Parallel Problem Solving}.
+\newblock Technical Report KSL-86-19, Dept.\ of Computer Science, Stanford
+  Univ.
+%%BIBENTRY-END:r:86%%
+
+\paragraph{Dissertation or thesis} Use the \texttt{@phdthesis} class.\\[.2em]
+\nocite{c:79}
+%%BIBENTRY-BEGIN:c:79|.%%
+Clancey, W.~J. 1979.
+\newblock \emph{{Transfer of Rule-Based Expertise through a Tutorial
+  Dialogue}}.
+\newblock {Ph.D.} diss., Dept.\ of Computer Science, Stanford Univ., Stanford,
+  Calif.
+%%BIBENTRY-END:c:79%%
+
+\paragraph{Forthcoming publication} Use the \texttt{@misc} class with a \texttt{note="Forthcoming"} annotation.
+\begin{quote}
+\begin{footnotesize}
+\begin{verbatim}
+@misc(key,
+  [...]
+  note="Forthcoming",
+)
+\end{verbatim}
+\end{footnotesize}
+\end{quote}
+\nocite{c:21}
+%%BIBENTRY-BEGIN:c:21|.%%
+Clancey, W.~J. 2021.
+\newblock {The Engineering of Qualitative Models}.
+\newblock Forthcoming.
+%%BIBENTRY-END:c:21%%
+
+\paragraph{ArXiv paper} Fetch the BibTeX entry from the ``Export Bibtex Citation" link in the arXiv website. Notice it uses the \texttt{@misc} class instead of the \texttt{@article} one, and that it includes the \texttt{eprint} and \texttt{archivePrefix} keys.
+\begin{quote}
+\begin{footnotesize}
+\begin{verbatim}
+@misc(key,
+  [...]
+  eprint="xxxx.yyyy",
+  archivePrefix="arXiv",
+)
+\end{verbatim}
+\end{footnotesize}
+\end{quote}
+\nocite{c:22}
+%%BIBENTRY-BEGIN:c:22|.%%
+Vaswani, A.; Shazeer, N.; Parmar, N.; Uszkoreit, J.; Jones, L.; Gomez, A.~N.;
+  Kaiser, L.; and Polosukhin, I. 2023.
+\newblock Attention Is All You Need.
+\newblock arXiv:1706.03762.
+%%BIBENTRY-END:c:22%%
+
+\paragraph{Website or online resource} Use the \texttt{@misc} class. Add the url in the \texttt{howpublished} field and the date of access in the \texttt{note} field:
+\begin{quote}
+\begin{footnotesize}
+\begin{verbatim}
+@misc(key,
+  [...]
+  howpublished="\url{http://...}",
+  note="Accessed: YYYY-mm-dd",
+)
+\end{verbatim}
+\end{footnotesize}
+\end{quote}
+\nocite{c:23}
+%%BIBENTRY-BEGIN:c:23|.%%
+{NASA}. 2015.
+\newblock Pluto: The 'Other' Red Planet.
+\newblock \url{https://www.nasa.gov/nh/pluto-the-other-red-planet}.
+\newblock Accessed: 2018-12-06.
+%%BIBENTRY-END:c:23%%

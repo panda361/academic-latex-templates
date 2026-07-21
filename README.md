@@ -42,6 +42,8 @@ We split the original template into the following extensible structure to simpli
 
 ### 当前支持会议 Currently Supported
 
+- AAAI 2027 `templates/aaai27/`
+- KDD 2027 `templates/kdd27/`
 - KDD 2026 `templates/kdd26/`  
 - IJCAI-ECAI 2026 `templates/ijcai26/`  
 - IJCAI 2025 `templates/ijcai25/`  
