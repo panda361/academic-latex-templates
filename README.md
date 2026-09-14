@@ -43,6 +43,7 @@ We split the original template into the following extensible structure to simpli
 ### 当前支持会议 Currently Supported
 
 - AAAI 2027 `templates/aaai27/`
+- ICASSP 2027 `templates/icassp27/`
 - KDD 2027 `templates/kdd27/`
 - KDD 2026 `templates/kdd26/`  
 - IJCAI-ECAI 2026 `templates/ijcai26/`  
@@ -55,8 +56,8 @@ We split the original template into the following extensible structure to simpli
 - 将该目录复制到你的论文项目中  
   Copy this folder into your paper project
 
-- 修改 `main.tex` 以及 `sections/*.tex` `figures/*.tex` `tables/*.tex` 等内容文件  
-  Edit `main.tex` and the files under `sections` `figures` and `tables` then compile with your usual LaTeX toolchain
+- 修改 `main.tex`、各章节对应的 `.tex` 文件以及 `figures/*.tex` `tables/*.tex` 等内容文件  
+  Edit `main.tex`, the corresponding `.tex` file for each section, and files under `figures` and `tables`, then compile with your usual LaTeX toolchain
 
 
 ## 贡献 Contribution
